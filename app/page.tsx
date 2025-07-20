@@ -874,7 +874,7 @@ export default function Portfolio() {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => window.open("https://github.com/ameliakasrin", "_blank")}
+                  onClick={() => window.open("https://github.com/Amelia-Kasrin05/", "_blank")}
                 >
                   <Github className="w-4 h-4 mr-2" />
                   GitHub
