@@ -70,256 +70,262 @@
 }
 
 @layer utilities {
-  /* Enhanced Animations */
-  .animate-fade-in-up-enhanced {
-    animation: fadeInUpEnhanced 1.2s ease-out;
+  /* Technology-themed animations */
+  .animate-float-tech {
+    animation: floatTech 6s ease-in-out infinite;
   }
 
-  .animate-slide-up-enhanced {
-    animation: slideUpEnhanced 1s ease-out;
-  }
-
-  .animate-expand-enhanced {
-    animation: expandEnhanced 1.5s ease-out;
-  }
-
-  .animate-float-enhanced {
-    animation: floatEnhanced 8s ease-in-out infinite;
-  }
-
-  .animate-float-delayed-enhanced {
-    animation: floatEnhanced 8s ease-in-out infinite;
-    animation-delay: 4s;
-  }
-
-  .animate-float-reverse-enhanced {
-    animation: floatReverseEnhanced 7s ease-in-out infinite;
-  }
-
-  .animate-float-slow-enhanced {
-    animation: floatSlowEnhanced 12s ease-in-out infinite;
-  }
-
-  .animate-bounce-enhanced {
-    animation: bounceEnhanced 2s infinite;
-  }
-
-  .animate-pulse-enhanced {
-    animation: pulseEnhanced 3s ease-in-out infinite;
-  }
-
-  .animate-ping-enhanced {
-    animation: pingEnhanced 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-  }
-
-  .animate-spin-enhanced {
-    animation: spinEnhanced 25s linear infinite;
-  }
-
-  .animate-spin-reverse-enhanced {
-    animation: spinReverseEnhanced 20s linear infinite;
-  }
-
-  .animate-gradient-shift-enhanced {
-    background-size: 400% 400%;
-    animation: gradientShiftEnhanced 20s ease infinite;
-  }
-
-  .animate-draw-line-enhanced {
-    stroke-dasharray: 1200;
-    stroke-dashoffset: 1200;
-    animation: drawLineEnhanced 25s ease-in-out infinite;
-  }
-
-  .animate-draw-line-reverse-enhanced {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: drawLineReverseEnhanced 30s ease-in-out infinite;
-  }
-
-  .animate-draw-line-wave {
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
-    animation: drawLineWave 35s ease-in-out infinite;
-  }
-
-  .animate-particle-enhanced {
-    animation: particleEnhanced 15s linear infinite;
-  }
-
-  .animate-grid-fade-enhanced {
-    animation: gridFadeEnhanced 4s ease-in-out infinite;
-  }
-
-  .animate-trail-enhanced {
-    animation: trailEnhanced 0.8s ease-out forwards;
-  }
-
-  .animate-float-badge {
-    animation: floatBadge 4s ease-in-out infinite;
-  }
-
-  .animate-float-icon {
-    animation: floatIcon 20s ease-in-out infinite;
-  }
-
-  .animate-shimmer {
-    animation: shimmer 2s ease-in-out infinite;
+  .animate-float-delayed {
+    animation: floatTech 6s ease-in-out infinite;
+    animation-delay: 3s;
   }
 
   .animate-pulse-glow {
-    animation: pulseGlow 4s ease-in-out infinite;
+    animation: pulseGlow 3s ease-in-out infinite;
   }
 
-  .animate-spin-slow {
-    animation: spinSlow 8s linear infinite;
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-code-rain {
+    animation: codeRain 15s linear infinite;
+  }
+
+  .animate-data-flow {
+    animation: dataFlow 20s linear infinite;
+  }
+
+  .animate-circuit-pulse {
+    animation: circuitPulse 4s ease-in-out infinite;
+  }
+
+  .animate-binary-scroll {
+    animation: binaryScroll 25s linear infinite;
+  }
+
+  .animate-network-pulse {
+    animation: networkPulse 5s ease-in-out infinite;
+  }
+
+  .animate-chart-grow {
+    animation: chartGrow 8s ease-in-out infinite;
+  }
+
+  .animate-matrix-fall {
+    animation: matrixFall 12s linear infinite;
+  }
+
+  .animate-tech-particle {
+    animation: techParticle 18s linear infinite;
+  }
+
+  .animate-gradient-shift {
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+
+  .animate-rotate-slow {
+    animation: rotateSlow 20s linear infinite;
+  }
+
+  .animate-rotate-reverse {
+    animation: rotateReverse 25s linear infinite;
+  }
+
+  .animate-scale-pulse {
+    animation: scalePulse 4s ease-in-out infinite;
+  }
+
+  .animate-tech-glow {
+    animation: techGlow 6s ease-in-out infinite;
   }
 }
 
-/* Enhanced Keyframes */
-@keyframes fadeInUpEnhanced {
-  from {
-    opacity: 0;
-    transform: translateY(50px) scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes slideUpEnhanced {
-  from {
-    opacity: 0;
-    transform: translateY(30px) rotateX(10deg);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) rotateX(0deg);
-  }
-}
-
-@keyframes expandEnhanced {
-  from {
-    width: 0;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    width: 6rem;
-    opacity: 1;
-  }
-}
-
-@keyframes floatEnhanced {
+/* Technology-themed keyframes */
+@keyframes floatTech {
   0%,
   100% {
     transform: translateY(0px) translateX(0px) rotate(0deg);
   }
   25% {
-    transform: translateY(-25px) translateX(10px) rotate(5deg);
+    transform: translateY(-20px) translateX(10px) rotate(90deg);
   }
   50% {
-    transform: translateY(-15px) translateX(-5px) rotate(-3deg);
+    transform: translateY(-10px) translateX(-5px) rotate(180deg);
   }
   75% {
-    transform: translateY(-30px) translateX(15px) rotate(7deg);
+    transform: translateY(-25px) translateX(15px) rotate(270deg);
   }
 }
 
-@keyframes floatReverseEnhanced {
+@keyframes pulseGlow {
   0%,
   100% {
-    transform: translateY(0px) translateX(0px) rotate(0deg);
-  }
-  33% {
-    transform: translateY(20px) translateX(-15px) rotate(-5deg);
-  }
-  66% {
-    transform: translateY(-10px) translateX(20px) rotate(8deg);
-  }
-}
-
-@keyframes floatSlowEnhanced {
-  0%,
-  100% {
-    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translateY(-40px) translateX(25px) rotate(15deg) scale(1.1);
+    opacity: 0.4;
+    transform: scale(1);
+    filter: blur(1px);
   }
   50% {
-    transform: translateY(20px) translateX(-20px) rotate(-10deg) scale(0.9);
-  }
-  75% {
-    transform: translateY(-30px) translateX(30px) rotate(20deg) scale(1.05);
-  }
-}
-
-@keyframes bounceEnhanced {
-  0%,
-  20%,
-  53%,
-  80%,
-  100% {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  40%,
-  43% {
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -30px, 0) scale(1.1);
-  }
-  70% {
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -15px, 0) scale(1.05);
-  }
-  90% {
-    transform: translate3d(0, -4px, 0) scale(1.02);
+    opacity: 0.8;
+    transform: scale(1.1);
+    filter: blur(0px);
   }
 }
 
-@keyframes pulseEnhanced {
-  0%,
-  100% {
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
     opacity: 1;
     transform: scale(1);
   }
-  50% {
-    opacity: 0.7;
-    transform: scale(1.1);
-  }
 }
 
-@keyframes pingEnhanced {
-  75%,
+@keyframes codeRain {
+  0% {
+    transform: translateY(-100vh) translateX(0px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
   100% {
-    transform: scale(2.5);
+    transform: translateY(100vh) translateX(50px);
     opacity: 0;
   }
 }
 
-@keyframes spinEnhanced {
-  from {
-    transform: rotate(0deg);
+@keyframes dataFlow {
+  0% {
+    transform: translateX(-100vw) rotate(0deg);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw) rotate(360deg);
+    opacity: 0;
   }
 }
 
-@keyframes spinReverseEnhanced {
-  from {
-    transform: rotate(360deg);
+@keyframes circuitPulse {
+  0%,
+  100% {
+    stroke-dashoffset: 1000;
+    opacity: 0.3;
   }
-  to {
-    transform: rotate(0deg);
+  50% {
+    stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 
-@keyframes gradientShiftEnhanced {
+@keyframes binaryScroll {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes networkPulse {
+  0%,
+  100% {
+    r: 3;
+    opacity: 0.6;
+  }
+  50% {
+    r: 8;
+    opacity: 1;
+  }
+}
+
+@keyframes chartGrow {
+  0%,
+  100% {
+    transform: scaleY(0.3) scaleX(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleY(1) scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes matrixFall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes techParticle {
+  0% {
+    transform: translate(0, 100vh) rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translate(20px, 80vh) rotate(45deg) scale(1);
+  }
+  50% {
+    transform: translate(-30px, 50vh) rotate(180deg) scale(1.2);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(40px, 20vh) rotate(315deg) scale(0.8);
+  }
+  100% {
+    transform: translate(0, -100vh) rotate(360deg) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes gradientShift {
   0%,
   100% {
     background-position: 0% 50%;
@@ -335,161 +341,7 @@
   }
 }
 
-@keyframes drawLineEnhanced {
-  0% {
-    stroke-dashoffset: 1200;
-    opacity: 0;
-  }
-  15% {
-    opacity: 1;
-  }
-  50% {
-    stroke-dashoffset: 0;
-    opacity: 1;
-  }
-  85% {
-    opacity: 1;
-  }
-  100% {
-    stroke-dashoffset: -1200;
-    opacity: 0;
-  }
-}
-
-@keyframes drawLineReverseEnhanced {
-  0% {
-    stroke-dashoffset: -1000;
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  50% {
-    stroke-dashoffset: 0;
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    stroke-dashoffset: 1000;
-    opacity: 0;
-  }
-}
-
-@keyframes drawLineWave {
-  0% {
-    stroke-dashoffset: 800;
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    stroke-dashoffset: 0;
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    stroke-dashoffset: -800;
-    opacity: 0;
-  }
-}
-
-@keyframes particleEnhanced {
-  0% {
-    transform: translateY(100vh) scale(0) rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(50vh) scale(1) rotate(180deg);
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100vh) scale(0) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-@keyframes gridFadeEnhanced {
-  0%,
-  100% {
-    opacity: 0.1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.3;
-    transform: scale(1.05);
-  }
-}
-
-@keyframes trailEnhanced {
-  0% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0) rotate(180deg);
-    opacity: 0;
-  }
-}
-
-@keyframes floatBadge {
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-5px) rotate(2deg);
-  }
-}
-
-@keyframes floatIcon {
-  0%,
-  100% {
-    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translateY(-50px) translateX(30px) rotate(90deg) scale(1.2);
-  }
-  50% {
-    transform: translateY(20px) translateX(-40px) rotate(180deg) scale(0.8);
-  }
-  75% {
-    transform: translateY(-30px) translateX(50px) rotate(270deg) scale(1.1);
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes pulseGlow {
-  0%,
-  100% {
-    opacity: 0.3;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.6;
-    transform: scale(1.1);
-  }
-}
-
-@keyframes spinSlow {
+@keyframes rotateSlow {
   from {
     transform: rotate(0deg);
   }
@@ -498,13 +350,46 @@
   }
 }
 
+@keyframes rotateReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes scalePulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes techGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    opacity: 0.6;
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+    opacity: 1;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Enhanced Custom scrollbar */
+/* Enhanced scrollbar with tech theme */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -513,7 +398,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #3b82f6, #6366f1);
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
 }
 
