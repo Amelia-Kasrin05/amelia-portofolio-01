@@ -355,7 +355,8 @@ export default function Portfolio() {
       date: "August 2023 – December 2023",
       grade: "96/100 (A)",
       certificateNumber: "CMP/12-23/6658616",
-      image: "/placeholder.svg?height=400&width=600&text=RevoU+Certificate",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/revou%20sertifikat-dtv7VFIxahxfU7ReClQCBzyXFeeDaS.png",
       modules: [
         {
           name: "Data Processing in Data Analytics",
@@ -419,46 +420,59 @@ export default function Portfolio() {
         "Comprehensive program covering fullstack development and data analysis with capstone project achieving excellent results. Completed 5 modules with total 760 hours of intensive learning.",
       type: "certificate",
     },
-    {
-      title: "Surat Keterangan Magang",
-      issuer: "Dinas Komunikasi dan Informatika, Padang",
-      date: "August 2024 – September 2024",
-      image: "/placeholder.svg?height=300&width=400&text=Internship+Certificate",
-      skills: ["PHP", "JavaScript", "HTML", "CSS", "MySQL", "Web Development", "UI/UX Design"],
-      description:
-        "Internship completion certificate for web programming position, working on transportation system project (PATRAN).",
-      type: "internship",
-    },
   ]
 
   const projects = [
     {
-      title: "PATRAN (Padang Transportasi Rancak)",
+      title: "Sistem Pendukung Keputusan AHP-TOPSIS",
       description:
-        "Aplikasi web berbasis peta digital untuk visualisasi rute transportasi di Kota Padang. Dibangun selama magang di Dinas Komunikasi dan Informatika dengan fokus pada pengelolaan data kendaraan, harga, dan rute. Sistem ini dilengkapi dengan dashboard admin dan sistem penilaian kriteria bobot.",
+        "Sistem pendukung keputusan yang dikembangkan selama masa PKL di Toko Warzuqni Official, sebuah toko yang menjual produk kecantikan. Sistem ini menggunakan metode AHP (Analytical Hierarchy Process) dan TOPSIS (Technique for Order Preference by Similarity to Ideal Solution) untuk membantu dalam pengambilan keputusan pemilihan produk kecantikan terbaik berdasarkan kriteria yang telah ditentukan. Aplikasi ini membantu toko dalam menentukan ranking produk berdasarkan berbagai faktor seperti kualitas, harga, dan popularitas.",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/projek%20pkl.jpg-1zhgex3G4fhEpjAvpunlQCxYactbJw.jpeg",
-      technologies: ["PHP", "JavaScript", "HTML", "CSS", "MySQL"],
-      category: "Web Application",
+      technologies: ["PHP", "JavaScript", "HTML", "CSS", "MySQL", "Bootstrap"],
+      category: "Decision Support System",
       status: "Completed",
       date: "August 2024 – September 2024",
       features: [
-        "Visualisasi rute berbasis peta digital",
-        "Sistem penilaian bobot kriteria",
-        "Dashboard admin untuk monitoring",
-        "Pengelolaan database kendaraan dan harga",
-        "Interface pengguna yang responsif",
-        "Sistem manajemen rute transportasi",
-        "Dokumentasi teknis lengkap",
+        "Implementasi metode AHP untuk pembobotan kriteria",
+        "Implementasi metode TOPSIS untuk ranking alternatif",
+        "Interface input data produk kecantikan",
+        "Kalkulasi otomatis nilai preferensi",
+        "Dashboard hasil ranking produk",
+        "Export hasil analisis dalam format laporan",
+        "Validasi konsistensi matriks perbandingan",
       ],
-      highlights: ["Government Project", "Internship Project", "Transportation System", "Criteria Analysis"],
-      role: "Programmer Web - Magang",
+      highlights: ["PKL Project", "AHP-TOPSIS Method", "Beauty Products", "Decision Support"],
+      role: "Web Developer - PKL",
+      company: "Toko Warzuqni Official",
+    },
+    {
+      title: "PATRAN (Padang Transportasi Rancak)",
+      description:
+        "Aplikasi web berbasis peta digital untuk visualisasi rute transportasi di Kota Padang. Sistem ini dikembangkan sebagai bagian dari digitalisasi layanan transportasi publik dengan fokus pada penyediaan informasi rute, jadwal, dan tarif transportasi yang mudah diakses oleh masyarakat. Dilengkapi dengan fitur pencarian rute optimal dan informasi real-time untuk meningkatkan efisiensi transportasi publik di Kota Padang.",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/patran-project.jpg-T1NALsqekaKi3gKmAIjqHAzGGMrbNR.png",
+      technologies: ["PHP", "JavaScript", "HTML", "CSS", "MySQL", "Google Maps API"],
+      category: "Transportation System",
+      status: "Completed",
+      date: "August 2024 – September 2024",
+      features: [
+        "Landing page dengan desain modern dan responsif",
+        "Visualisasi rute berbasis peta digital",
+        "Informasi jadwal dan tarif transportasi",
+        "Pencarian rute optimal antar lokasi",
+        "Database kendaraan dan operator",
+        "Integrasi dengan Google Maps API",
+        "Sistem informasi halte dan pemberhentian",
+      ],
+      highlights: ["Government Project", "Transportation System", "Public Service", "Digital Map"],
+      role: "Web Developer - PKL",
       company: "Dinas Komunikasi dan Informatika, Padang",
     },
     {
       title: "Sistem Informasi Pembayaran Online (Aulia Busana)",
       description:
-        "Tugas Akhir berupa sistem informasi pembayaran online berbasis Laravel dengan integrasi API QRIS. Fokus pada pengelolaan transaksi digital dan manajemen pengguna dengan keamanan tinggi. Sistem dilengkapi dengan dashboard analytics yang menampilkan grafik pendapatan dan statistik bisnis real-time.",
+        "Tugas Akhir berupa sistem informasi pembayaran online berbasis Laravel dengan integrasi API QRIS. Fokus pada pengelolaan transaksi digital dan manajemen pengguna dengan keamanan tinggi. Sistem dilengkapi dengan dashboard analytics yang menampilkan grafik pendapatan dan statistik bisnis real-time untuk membantu pengambilan keputusan bisnis.",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/skripsi%20projek.jpg-DtQKFXaZWMSTDgpUrp6aaLekuwfkyt.jpeg",
       technologies: ["Laravel", "PHP", "MySQL", "QRIS API", "Bootstrap", "JavaScript", "Chart.js"],
@@ -467,21 +481,21 @@ export default function Portfolio() {
       date: "2024 – 2025",
       features: [
         "Dashboard analytics dengan grafik real-time",
-        "Integrasi API QRIS untuk pembayaran",
+        "Integrasi API QRIS untuk pembayaran digital",
         "Manajemen kategori, produk, member, dan supplier",
-        "Sistem keamanan berlapis",
+        "Sistem keamanan berlapis dan enkripsi data",
         "Laporan transaksi dan statistik bisnis",
         "Interface admin yang user-friendly",
-        "Monitoring pendapatan harian",
+        "Monitoring pendapatan dan analisis trend",
       ],
       highlights: ["Final Thesis", "Payment Integration", "Laravel Framework", "Business Analytics"],
-      role: "Developer",
+      role: "Full-Stack Developer",
       company: "Universitas Putra Indonesia YPTK",
     },
     {
       title: "Portal Berita Medan 30 - RevoU Capstone",
       description:
-        "Proyek capstone dalam program Studi Independen RevoU yang mencakup pengembangan portal berita fullstack dengan integrasi frontend-backend, data analysis, dan deployment. Portal berita ini dilengkapi dengan sistem manajemen konten, kategori berita, dan interface yang responsif. Mencapai skor akhir 96/100.",
+        "Proyek capstone dalam program Studi Independen RevoU yang mencakup pengembangan portal berita fullstack dengan integrasi frontend-backend, data analysis, dan deployment. Portal berita ini dilengkapi dengan sistem manajemen konten, kategori berita, sistem komentar, dan interface yang responsif. Mencapai skor akhir 96/100 dengan leadership yang excellent.",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/revou%20projek.jpg-WhpWJssnTpKqAb3MsQFOaW9QZq0a2R.jpeg",
       technologies: ["Node.js", "Express.js", "HTML", "CSS", "JavaScript", "SQL", "Python"],
@@ -489,16 +503,16 @@ export default function Portfolio() {
       status: "Completed",
       date: "August 2023 – December 2023",
       features: [
-        "Portal berita dengan sistem CMS",
-        "Manajemen kategori dan artikel",
-        "Interface responsif multi-device",
-        "Sistem pencarian dan filter berita",
+        "Portal berita dengan sistem CMS lengkap",
+        "Manajemen kategori dan artikel dinamis",
+        "Interface responsif untuk multi-device",
+        "Sistem pencarian dan filter berita advanced",
         "Dashboard admin untuk pengelolaan konten",
-        "Data analysis dan visualisasi traffic",
-        "Deployment dan dokumentasi lengkap",
+        "Data analysis dan visualisasi traffic pengunjung",
+        "Deployment dan dokumentasi teknis lengkap",
       ],
       highlights: ["Capstone Project", "Team Leadership", "Excellent Grade (A)", "News Portal", "CMS"],
-      role: "Project Leader",
+      role: "Project Leader & Full-Stack Developer",
       company: "RevoU Tech Academy",
     },
   ]
@@ -795,14 +809,16 @@ export default function Portfolio() {
             {[
               {
                 icon: Briefcase,
-                title: "Programmer Web - Magang",
-                company: "Dinas Komunikasi dan Informatika, Padang",
+                title: "Web Developer - Magang (PKL)",
+                company: "Toko Warzuqni Official & Dinas Komunikasi dan Informatika, Padang",
                 period: "August 2024 – September 2024",
                 tasks: [
-                  "Membangun aplikasi web transportasi menggunakan PHP, JavaScript, HTML, dan CSS.",
-                  "Merancang UI/UX serta backend visualisasi rute berbasis peta digital.",
-                  "Mengelola database kendaraan, harga, dan rute menggunakan MySQL.",
-                  "Melakukan pengujian sistem dan menyusun dokumentasi teknis.",
+                  "Mengembangkan Sistem Pendukung Keputusan AHP-TOPSIS untuk Toko Warzuqni Official dalam pemilihan produk kecantikan terbaik.",
+                  "Membangun aplikasi PATRAN (Padang Transportasi Rancak) untuk Dinas Komunikasi dan Informatika Padang.",
+                  "Mengimplementasikan metode AHP dan TOPSIS untuk analisis multi-kriteria dalam pengambilan keputusan.",
+                  "Merancang UI/UX yang user-friendly dan responsive untuk kedua sistem.",
+                  "Mengelola database dan implementasi logika bisnis menggunakan PHP dan MySQL.",
+                  "Melakukan testing, debugging, dan dokumentasi teknis untuk kedua project.",
                 ],
               },
               {
